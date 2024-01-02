@@ -8,18 +8,19 @@ Assumptions
 
 
 Run with spark-submit
-- Clone the code from the repository and navigate to “<actual_path> \dummy_project_1\ src\main” folder.
+- Clone the code from the repository https://github.com/dhirendramisra/projects.git and navigate to “<actual_path>\projects\dummy_project_1\ src\main.
 - Zip the ‘jobs’ folder. You will get jobs.zip
-- Move a folder up that is navigate to “<actual_path> \dummy_project_1\ src” folder.
+- Move a folder up that is navigate to “<actual_path>\projects\dummy_project_1\src” folder.
 - Copy and paste the command below and replace <actual_path> with your actual path
------spark-submit --py-files main/jobs.zip app.py --job-name "movie_lens_pipeline" --resource-path " <actual_path> \dummy_project_1\src\main\jobs”
+-----spark-submit --py-files main/jobs.zip app.py --job-name "movie_lens_pipeline" --resource-path "<actual path>\projects\dummy_project_1\src\main\jobs"
+
 -----My command :
 -----D:\pyspark_installed\dummy_project_1\src>spark-submit --py-files main/jobs.zip app.py --job-name "movie_lens_pipeline" --resource-path "D:\pyspark_installed\dummy_project_1\src\main\jobs"
 
 
 Unit testing
-- Navigate to “<actual_path> \dummy_project_1\ src” folder if you are not there in command prompt. Run the following commands.
---- set SPARK_HOME=<actual_path>\spark-3.5.0-bin-hadoop3
+- Navigate to “<actual_path>\projects\dummy_project_1\ src” folder if you are not there in command prompt. Run the following commands.
+--- set SPARK_HOME=<spark-home-path>\spark-3.5.0-bin-hadoop3
 --- set HADOOP_HOME=%SPARK_HOME%
 --- set PYTHONPATH=%SPARK_HOME%/python;%SPARK_HOME%/python/lib/py4j-0.10.9.7-src.zip;%PYTHONPATH% 
 - Change the version of highlighted py4j-0… zip file as per installed at your machine. 
@@ -27,7 +28,8 @@ Unit testing
 --- pip install pytest
 --- pip install pyspark-test
 - To invoke the unit testing, run the following command 
----<actual_path> \dummy_project_1\src> py.test -s
+---<actual_path>\projects\dummy_project_1\src> py.test -s
+
 
 
 via python 
