@@ -6,8 +6,6 @@ import logging.config
 import importlib
 import json
 
-# if os.path.exists('jobs.zip'):
-#     sys.path.insert(0, 'jobs.zip')
 
 # Activate main logging
 logging.config.fileConfig('config/logging.config')
@@ -40,6 +38,7 @@ def main():
 
         module_name = "main.jobs."+job_name+"."+job_name
         logger_main.info('Start of pipeline {} . '.format(module_name))
+        
         # Call the module to run the pipeline.
         job_module = importlib.import_module(module_name)
         config = get_config(res_path, job_name)

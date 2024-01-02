@@ -212,5 +212,6 @@ def run(job_config):
         logger.info("End of Job {}.".format(job_config["job_name"]))
     except Exception as exp :
         raise
+    finally :
         # kill the spark object
         job.stop()
