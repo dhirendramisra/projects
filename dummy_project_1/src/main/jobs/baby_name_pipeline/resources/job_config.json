@@ -1,0 +1,5 @@
+{
+    "bname_input_path"   : "main/jobs/baby_name_pipeline/resources/baby_name.csv",
+    "header"             : "True",
+    "output_path"        : "main/jobs/baby_name_pipeline/output"
+}

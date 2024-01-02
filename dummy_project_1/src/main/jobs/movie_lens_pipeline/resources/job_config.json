@@ -1,0 +1,8 @@
+{
+    "movies_input_path"  : "main/jobs/movie_lens_pipeline/resources/movies.dat",
+    "ratings_input_path" : "main/jobs/movie_lens_pipeline/resources/ratings.dat",
+    "users_input_path"   : "main/jobs/movie_lens_pipeline/resources/users.dat",
+    "separater"          : "::",
+    "header"             : "False",
+    "output_path"        : "main/jobs/movie_lens_pipeline/output"
+}

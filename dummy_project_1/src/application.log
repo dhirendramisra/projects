@@ -1,0 +1,30 @@
+2024-01-01 23:46:58,230 - __main__ - INFO - Start of pipeline main.jobs.movie_lens_pipeline.movie_lens_pipeline . 
+2024-01-01 23:46:58,892 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Inside movie_lens pipeline
+2024-01-01 23:47:04,277 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Start of Job movie_lens_pipeline has started.
+2024-01-01 23:47:04,277 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - 1. Read movie and raings into dataframes
+2024-01-01 23:47:04,277 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Reading movie data..
+2024-01-01 23:47:08,149 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Reading rating data..
+2024-01-01 23:47:08,195 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Reading user data..
+2024-01-01 23:47:11,733 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Count of movie dataset 3883.
+2024-01-01 23:47:12,577 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Count of rating dataset 1000209.
+2024-01-01 23:47:12,837 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Count of user dataset 6040.
+2024-01-01 23:47:12,837 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Check nulls and NaN for movie dataframe
+2024-01-01 23:47:13,442 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Movie dataframe is okay.
+2024-01-01 23:47:13,442 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - End task 1
+2024-01-01 23:47:13,442 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - 2. Creates a new dataframe, which contains the movies data and 3 new columns max, min and average rating for that movie from the ratings data.
+2024-01-01 23:47:20,339 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - 3883
+2024-01-01 23:47:20,339 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - End of task 2
+2024-01-01 23:47:20,339 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - 3. Create a new dataframe which contains each user�s (userId in the ratings data) top 3 movies based on their rating.
+2024-01-01 23:47:26,222 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - End of task 3
+2024-01-01 23:47:26,222 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - 4. Write out the original and new dataframes in an efficient format.
+2024-01-01 23:47:26,960 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Dataframe has been written successfully as ori_movies in the file format CSV
+2024-01-01 23:47:28,579 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Dataframe has been written successfully as ori_movies in the file format PARQUET
+2024-01-01 23:47:29,294 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Dataframe has been written successfully as ori_movies in the file format ORC
+2024-01-01 23:47:31,064 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Dataframe has been written successfully as ori_ratings in the file format parquet
+2024-01-01 23:47:31,287 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Dataframe has been written successfully as ori_users in the file format parquet
+2024-01-01 23:47:36,020 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Dataframe has been written successfully as movies_stats in the file format parquet
+2024-01-01 23:47:40,198 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - Dataframe has been written successfully as user_top_movies in the file format parquet
+2024-01-01 23:47:40,198 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - End of task 4
+2024-01-01 23:47:40,198 - main.jobs.movie_lens_pipeline.movie_lens_pipeline - INFO - End of Job movie_lens_pipeline.
+2024-01-01 23:47:40,198 - __main__ - INFO - End of pipelines main.jobs.movie_lens_pipeline.movie_lens_pipeline .
+2024-01-01 23:47:40,198 - py4j.clientserver - INFO - Closing down clientserver connection
